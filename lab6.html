@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Map of The US</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+        
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    </head>
+    <body>
+        <h1>Map of the United States</h1>
+
+        <div id="map" style="height: 180px;"></div>
+
+        <h3>Marker 1: </h3>
+        <p>Locality: </p>
+
+        <h3>Marker 2: </h3>
+        <p>Locality: </p>
+        
+        <h3>Marker 3: </h3>
+        <p>Locality: </p>
+    
+        <script>
+            function getRandomInRange(from, to, fixed) {
+                return (Math.random() * (to - from) + from).toFixed(fixed) * 1;
+                // .toFixed() returns string, so ' * 1' is a trick to convert to number
+            }
+        </script>
+    
+    </body>
+</html>
